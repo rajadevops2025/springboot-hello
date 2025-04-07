@@ -28,7 +28,7 @@ pipeline {
         stage('Docker Login'){
             
             steps {
-                 withCredentials([string(credentialsId: 'github-api-token-raja-2025', variable: 'Dockerpwd')]) {
+                 withCredentials([string(credentialsId: 'DockerId', variable: 'Dockerpwd')]) {
                     bat "docker login -u rajadevops2025 -p %Dockerpwd%"
                 }
             }                
