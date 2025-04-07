@@ -21,7 +21,7 @@ pipeline {
           
             steps {
                 echo "Hello Java Express"
-                bat 'ls'
+                bat 'dir'
                 bat 'docker build -t  rajadevops2025/docker_jenkins_springboot:${BUILD_NUMBER} .'
             }
         }
